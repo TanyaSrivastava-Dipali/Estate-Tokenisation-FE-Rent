@@ -187,7 +187,7 @@ const RentOperationDetails = () => {
       console.log(initialRentalTxFinality);
       if (initialRentalTxFinality.blockNumber != null) {
         alert("Successfully Initiated the rental Period");
-        window.location.reload(true);
+        window.location.reload(false);
       } else {
         alert("something Went Wrong, try again");
       }
@@ -221,7 +221,7 @@ const RentOperationDetails = () => {
       // console.log(terminateRentalTxFinality);
       if (terminateRentalTxFinality.blockNumber != null) {
         alert("Successfully Terminated the rental Period");
-        window.location.reload(true);
+        window.location.reload(false);
       } else {
         alert("something Went Wrong, try again");
       }
@@ -262,7 +262,7 @@ const RentOperationDetails = () => {
       // console.log(terminateRentalTxFinality);
       if (distributeRentalAmountTxFinality.blockNumber != null) {
         alert("Successfully Distribute Rent");
-        // window.location.reload(true);
+        // window.location.reload(false);
       } else {
         alert("something Went Wrong, try again");
       }

@@ -121,7 +121,7 @@ const ReserveOperationsDetails = () => {
       const restoreTxFinality = await tx.wait();
       if (restoreTxFinality.blockNumber != null) {
         alert("Successfully Restored Maintenance Reserve");
-        window.location.reload(true);
+        window.location.reload(false);
       } else {
         alert("something Went Wrong, try again");
       }
@@ -154,7 +154,7 @@ const ReserveOperationsDetails = () => {
       const restoreTxFinality = await tx.wait();
       if (restoreTxFinality.blockNumber != null) {
         alert("Successfully Restored Vacancy Reserve");
-        window.location.reload(true);
+        window.location.reload(false);
       } else {
         alert("something Went Wrong, try again");
       }
