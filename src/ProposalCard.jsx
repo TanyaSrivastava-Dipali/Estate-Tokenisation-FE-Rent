@@ -75,7 +75,7 @@ const ProposalCard = (props) => {
       const executeTxFinality = await tx.wait();
       if (executeTxFinality.blockNumber != null) {
         alert("Successfully Executed Proposal");
-        window.location.reload(false);
+        window.location.reload(true);
       } else {
         alert("something Went Wrong, try again");
       }

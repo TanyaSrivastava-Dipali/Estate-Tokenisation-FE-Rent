@@ -138,7 +138,7 @@ const Proposal = () => {
         });
         if (response.status === 201) {
           alert("Submitted Proposal Successfully");
-          window.location.reload(false);
+          window.location.reload(true);
         } else {
           alert("Something Went Wrong, Try again");
         }
